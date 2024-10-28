@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h3 class="logo">VISION CREATIVA</h3>
+        <nav class="navigation">
+            <a href="#">explorar</a>
+            <a href="#">servicios</a>
+            <a href="#">contactanos</a>
+            <button class="btnlogin-popup">registrarse</button>
+            <button class="btnregister">inico de sesion</button>
+        </nav>
+    </header>
+    <div class="wraperlogin">
+        <div class="form-box login">
+            <h2>Inicio de sesion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icono">
+                        <ion-icon name="mail-open"></ion-icon>
+                    </span>
+                    <input type="email"required>
+                    <label>correo</label>
+                </div>
+                <div class="input-box">
+                    <span class="icono">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password"required>
+                    <label>contraseña</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>recordar </label>
+                        <a href="#">mi contraseña?</a>
+                    <button type="submit" class="btn">
+                        acceso
+                    </button>
+                    <div class="login-register">
+                        <p>no tengo cuenta
+                            <a href="#"class="register-Link">register</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="wraperregister">
+        <div class="form-box register">
+            <h2>registrarse</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icono">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                    <input type="text"required>
+                    <label>nombre del usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icono">
+                        <ion-icon name="mail-open"></ion-icon>
+                    </span>
+                    <input type="email"required>
+                    <label>correo</label>
+                </div>
+                <div class="input-box">
+                    <span class="icono">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password"required>
+                    <label>contraseña</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">acepto terminos y condiciones</label>
+                    <button type="submit" class="btn">
+                        registrarse
+                    </button>
+                    <div class="login-register">
+                        <p>¿Ya tienes una cuenta?
+                            <a href="#"class="login-Link">Iniciar Sesion</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
