@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #48C9B0; /* Color de barra superior */
+    background-color: #1ABC9C; /* Color de barra superior */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -96,7 +96,7 @@ body {
 
 /* Barra inferior */
 .footer {
-    background-color: #48C9B0; /* Color de barra inferior */
+    background-color: #1ABC9C; /* Color de barra inferior */
     padding: 10px 30px; /* Reducir grosor */
     text-align: center;
     color: #000; /* Texto negro */
