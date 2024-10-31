@@ -1,4 +1,4 @@
-/* General */
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,133 +6,149 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body */
 body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Encabezado */
-header {
+    background-color: #121212; /* Color de fondo principal */
+    color: #FFFFFF; /* Color de texto general */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #17202A;
+    justify-content: center;
+    height: 100vh;
 }
 
-header .logo {
+/* Estilo de la barra de navegación */
+nav {
+    width: 100%;
+    background-color: #1E1E1E; /* Color del fondo del menú */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #28B463;
+    background-color: #333333;
+    border-radius: 4px;
 }
 
-header .auth-buttons a {
+/* Botones de 'Registrarse' y 'Iniciar sesión' */
+nav .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+nav .buttons a {
+    color: #FFFFFF;
     text-decoration: none;
-    padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
-.auth-buttons a.register {
-    color: #17202A;
-    background-color: #fff;
-    border: 1px solid #17202A;
+nav .buttons .register {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
 }
 
-.auth-buttons a.login {
-    color: #fff;
-    background-color: #17202A;
+nav .buttons .login {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-.auth-buttons a.register:hover {
-    background-color: #28B463;
-    color: #fff;
-}
-
-.auth-buttons a.login:hover {
-    background-color: #28B463;
-}
-
-/* Sección principal */
+/* Estilo del área principal */
 main {
+    background-color: #1E1E1E; /* Fondo del contenido principal */
+    width: 80%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 100px 50px;
-    background-color: #17202A;
-    color: #fff;
-    height: 100vh;
+    text-align: center;
 }
 
-main .content {
-    max-width: 50%;
+main h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-main .content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #fff;
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #CCCCCC;
 }
 
-main .content p {
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-    color: #ccc;
-}
-
-main .content .buttons {
+/* Botones dentro del contenido principal */
+main .buttons {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
-main .content .buttons a {
-    text-decoration: none;
-    padding: 10px 20px;
+main .buttons a {
+    padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    color: #17202A;
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
-main .content .buttons a:hover {
-    background-color: #28B463;
-    color: #fff;
+main .buttons .explore {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-/* Estilo para la imagen a la derecha */
-main .image {
-    max-width: 40%;
-    height: auto;
-    background-color: #ccc; /* Placeholder color for the image background */
+main .buttons .register {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+main .buttons a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+/* Imagen de placeholder */
+.main-image {
+    width: 150px;
+    height: 150px;
+    background-color: #333333;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    margin-top: 1rem;
 }
 
-main .image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.main-image img {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
 }
