@@ -1,4 +1,4 @@
-/* Reset y estilos básicos */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +6,63 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #F0F4F8; /* Fondo suave azul claro */
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2; /* Color de fondo del encabezado */
+    color: white; /* Color de texto del encabezado */
+    padding: 20px 0;
     text-align: center;
-    color: #333; /* Texto gris oscuro para mejor legibilidad */
-    font-size: 16px;
 }
 
-/* Otros estilos adicionales */
-h1, h2, h3 {
-    color: #2C3E50; /* Encabezados en azul marino */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-a {
-    color: #E74C3C; /* Enlaces en rojo brillante */
+h2 {
+    font-size: 2em;
+    color: #4a90e2; /* Color de los subtítulos */
+    margin: 20px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #e7e7e7; /* Color de fondo de la barra de navegación */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #4a90e2; /* Color de los enlaces */
     text-decoration: none;
+    padding: 10px 15px;
 }
 
-a:hover {
-    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+nav a:hover {
+    background-color: #4a90e2; /* Color de fondo al pasar el ratón */
+    color: white; /* Color de texto al pasar el ratón */
 }
 
-button {
-    background-color: #2980B9; /* Botones en azul */
-    color: white; /* Texto blanco en botones */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+main {
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: auto; /* Centrar el contenido */
+    background-color: white; /* Fondo blanco para el contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
-button:hover {
-    background-color: #3498DB; /* Color de fondo del botón al pasar el mouse */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4a90e2; /* Color de fondo del pie de página */
+    color: white; /* Color de texto del pie de página */
 }
