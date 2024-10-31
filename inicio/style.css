@@ -1,3 +1,5 @@
+
+/* Reset y estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -6,126 +8,95 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Fondo gris claro para el cuerpo */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    color: #333333;
 }
 
-header {
+/* Estilos de la barra de navegación */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 15px 30px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 2em;
-    color: #333;
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.navegador {
-    list-style-type: none;
-    display: flex;
-}
-
-.navegador li {
-    margin-left: 30px; /* Espaciado entre los enlaces */
-}
-
-.navegador li a {
+.navbar-menu a {
+    margin-left: 20px;
+    color: #333333;
     text-decoration: none;
-    color: #000000;
-    font-size: 1.1em;
-    font-weight: 500;
+    font-size: 16px;
 }
 
-.register,
-.login {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px; 
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
+.navbar-menu a:hover {
+    color: #007BFF; /* Color de acento */
 }
 
-.register a,
-.login a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.nosotros {
-    position: relative;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.nosotros:hover .submenu {
-    display: block;
-}
-
-.submenu li {
-    list-style-type: none;
-}
-
-.submenu li a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: white;
-}
-
-.submenu li a:hover {
-    background-color: #f1f1f1;
-}
-
+/* Estilos de la sección principal */
 .main-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 80px); /* Altura del área principal menos el header */
-    background-color: #6e6e6e; /* Fondo gris oscuro para la sección principal */
-    color: #ffffff;
-    text-align: center;
+    height: 80vh;
+    background-color: #e0e0e0; /* Fondo gris claro para la sección principal */
 }
 
-.main-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.welcome-section {
+    max-width: 500px;
+    text-align: left;
 }
 
-.main-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.boton-explorar,
-.boton-registrarse {
-    display: inline-block;
-    background-color: #ffffff;
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
     color: #333333;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+/* Estilos de botones */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
+    border: none;
+    display: inline-block;
 }
 
-.boton-registrarse {
+.btn-primary {
+    background-color: #007BFF; /* Azul vibrante */
+    color: #ffffff;
+}
+
+.btn-secondary {
     background-color: transparent;
-    border: 1px solid #ffffff;
+    color: #333333;
+    border: 2px solid #333333;
 }
 
-.boton-explorar:hover,
-.boton-registrarse:hover {
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary:hover {
     background-color: #333333;
     color: #ffffff;
 }
