@@ -1,68 +1,138 @@
-/* Reset básico */
+/* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Color de fondo suave */
-    color: #333; /* Color de texto */
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Encabezado */
 header {
-    background-color: #4a90e2; /* Color de fondo del encabezado */
-    color: white; /* Color de texto del encabezado */
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #17202A;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
 }
 
-h2 {
-    font-size: 2em;
-    color: #4a90e2; /* Color de los subtítulos */
-    margin: 20px 0;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-p {
-    margin: 10px 0;
-}
-
-nav {
-    background-color: #e7e7e7; /* Color de fondo de la barra de navegación */
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: #4a90e2; /* Color de los enlaces */
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    background-color: #4a90e2; /* Color de fondo al pasar el ratón */
-    color: white; /* Color de texto al pasar el ratón */
+nav ul li a:hover {
+    color: #28B463;
 }
 
+header .auth-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons a.register {
+    color: #17202A;
+    background-color: #fff;
+    border: 1px solid #17202A;
+}
+
+.auth-buttons a.login {
+    color: #fff;
+    background-color: #17202A;
+}
+
+.auth-buttons a.register:hover {
+    background-color: #28B463;
+    color: #fff;
+}
+
+.auth-buttons a.login:hover {
+    background-color: #28B463;
+}
+
+/* Sección principal */
 main {
-    padding: 20px;
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: auto; /* Centrar el contenido */
-    background-color: white; /* Fondo blanco para el contenido */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #17202A;
+    color: #fff;
+    height: 100vh;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #4a90e2; /* Color de fondo del pie de página */
-    color: white; /* Color de texto del pie de página */
+main .content {
+    max-width: 50%;
+}
+
+main .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+main .content p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+main .content .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+main .content .buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #17202A;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main .content .buttons a:hover {
+    background-color: #28B463;
+    color: #fff;
+}
+
+/* Estilo para la imagen a la derecha */
+main .image {
+    max-width: 40%;
+    height: auto;
+    background-color: #ccc; /* Placeholder color for the image background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
