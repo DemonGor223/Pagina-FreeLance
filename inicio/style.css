@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F4EAE6; /* Fondo beige suave */
-    color: #2E2E2E; /* Texto en gris oscuro */
+    color: #000; /* Texto negro */
 }
 
 /* Estilos de la barra de navegación */
@@ -17,25 +17,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #3A506B; /* Azul grisáceo */
+    background-color: #48C9B0; /* Color de barra superior */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
     font-size: 24px;
     font-weight: bold;
-    color: #F4EAE6; /* Beige suave */
+    color: #000; /* Texto negro */
 }
 
 .navbar-menu a {
     margin-left: 20px;
-    color: #F4EAE6; /* Beige suave */
+    color: #000; /* Texto negro */
     text-decoration: none;
     font-size: 16px;
 }
 
 .navbar-menu a:hover {
-    color: #B8D8D8; /* Celeste pastel */
+    color: #2E2E2E; /* Gris oscuro */
 }
 
 /* Estilos de la sección principal */
@@ -55,13 +55,13 @@ body {
 .welcome-section h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: #3A506B; /* Azul grisáceo */
+    color: #000; /* Texto negro */
 }
 
 .welcome-section p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #2E2E2E; /* Texto en gris oscuro */
+    color: #000; /* Texto negro */
 }
 
 /* Estilos de botones */
@@ -79,25 +79,26 @@ body {
     text-decoration: none;
     border: none;
     display: inline-block;
+    color: #000; /* Texto negro */
 }
 
 .btn-primary {
-    background-color: #B8D8D8; /* Celeste pastel */
-    color: #3A506B; /* Azul grisáceo */
+    background-color: #5499C7; /* Color del botón de explorar */
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: #2E2E2E; /* Gris oscuro */
-    border: 2px solid #2E2E2E;
+    background-color: #5DADE2; /* Color del botón de registrarse */
 }
 
-.btn-primary:hover {
-    background-color: #3A506B; /* Azul grisáceo */
-    color: #F4EAE6; /* Beige suave */
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
 }
 
-.btn-secondary:hover {
-    background-color: #2E2E2E; /* Gris oscuro */
-    color: #F4EAE6; /* Beige suave */
+/* Barra inferior */
+.footer {
+    background-color: #48C9B0; /* Color de barra inferior */
+    padding: 10px 30px; /* Reducir grosor */
+    text-align: center;
+    color: #000; /* Texto negro */
+    font-size: 14px;
 }
