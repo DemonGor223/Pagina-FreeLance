@@ -7,7 +7,10 @@
 }
 
 body {
-    background-color: #121212;
+    background-image: url('tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -16,8 +19,8 @@ body {
     min-height: 100vh;
 }
 
-/* Barra superior */
-.top-bar {
+/* Barra de navegación */
+.navbar {
     width: 100%;
     background-color: #1E1E1E;
     padding: 1rem 2rem;
@@ -27,64 +30,49 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
-.top-bar .logo {
+.navbar-logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFFFFF;
 }
 
-.top-bar nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.top-bar nav ul li {
-    display: inline;
-}
-
-.top-bar nav ul li a {
+.navbar-menu a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1rem;
+    margin: 0 1rem;
     padding: 0.5rem 1rem;
     transition: background 0.3s ease;
 }
 
-.top-bar nav ul li a:hover {
+.navbar-menu a:hover {
     background-color: #333333;
     border-radius: 4px;
 }
 
-/* Contenido principal */
-main {
-    background-color: #1E1E1E;
+/* Sección principal */
+.main-content {
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo oscuro semitransparente para legibilidad */
     width: 80%;
     max-width: 1000px;
     padding: 4rem 2rem;
     margin-top: 80px;
     margin-bottom: 80px;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-.welcome-section {
-    display: flex;
-    gap: 2rem;
-}
-
-.welcome-text h1 {
+.welcome-section h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #FFFFFF;
 }
 
-.welcome-text p {
+.welcome-section p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #CCCCCC;
@@ -93,35 +81,31 @@ main {
 .buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
-.buttons .explore,
-.buttons .register {
-    padding: 0.8rem 1.5rem;
+.btn {
+    padding: 0.8rem 2rem;
     font-size: 1rem;
-    color: #121212;
-    background-color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 15px; /* Esquinas redondeadas */
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
-.buttons .explore:hover,
-.buttons .register:hover {
-    background-color: #333333;
+.btn-primary {
+    background-color: #2D2D2D; /* Color más claro que el secundario */
     color: #FFFFFF;
 }
 
-/* Imagen de placeholder */
-.main-image {
-    width: 150px;
-    height: 150px;
-    background-color: #333333;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+.btn-secondary {
+    background-color: #2D2D2D; /* Color más claro que el secundario */
+    color: #FFFFFF;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #555555;
+    color: #FFFFFF;
 }
 
 /* Barra inferior */
