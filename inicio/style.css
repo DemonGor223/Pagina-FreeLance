@@ -7,42 +7,45 @@
 }
 
 body {
-    background-color: #121212; /* Color de fondo principal */
-    color: #FFFFFF; /* Color de texto general */
+    background-color: #121212;
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-/* Estilo de la barra de navegación */
-nav {
+/* Barra superior */
+.top-bar {
     width: 100%;
-    background-color: #1E1E1E; /* Color del fondo del menú */
+    background-color: #1E1E1E;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-nav .logo {
+.top-bar .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #FFFFFF;
 }
 
-nav ul {
+.top-bar nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
-nav ul li {
+.top-bar nav ul li {
     display: inline;
 }
 
-nav ul li a {
+.top-bar nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1rem;
@@ -50,87 +53,61 @@ nav ul li a {
     transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
+.top-bar nav ul li a:hover {
     background-color: #333333;
     border-radius: 4px;
 }
 
-/* Botones de 'Registrarse' y 'Iniciar sesión' */
-nav .buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-nav .buttons a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-nav .buttons .register {
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-}
-
-nav .buttons .login {
-    background-color: #FFFFFF;
-    color: #000000;
-}
-
-/* Estilo del área principal */
+/* Contenido principal */
 main {
-    background-color: #1E1E1E; /* Fondo del contenido principal */
+    background-color: #1E1E1E;
     width: 80%;
-    max-width: 800px;
-    padding: 2rem;
+    max-width: 1000px;
+    padding: 4rem 2rem;
+    margin-top: 80px;
+    margin-bottom: 80px;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
-main h1 {
+.welcome-section {
+    display: flex;
+    gap: 2rem;
+}
+
+.welcome-text h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #FFFFFF;
 }
 
-main p {
+.welcome-text p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #CCCCCC;
 }
 
-/* Botones dentro del contenido principal */
-main .buttons {
+.buttons {
     display: flex;
     gap: 1rem;
 }
 
-main .buttons a {
+.buttons .explore,
+.buttons .register {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #121212;
+    background-color: #FFFFFF;
     border-radius: 4px;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
-main .buttons .explore {
-    background-color: #FFFFFF;
-    color: #000000;
-}
-
-main .buttons .register {
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
-}
-
-main .buttons a:hover {
+.buttons .explore:hover,
+.buttons .register:hover {
     background-color: #333333;
     color: #FFFFFF;
 }
@@ -147,8 +124,14 @@ main .buttons a:hover {
     margin-top: 1rem;
 }
 
-.main-image img {
-    width: 80px;
-    height: 80px;
-    opacity: 0.5;
+/* Barra inferior */
+.bottom-bar {
+    width: 100%;
+    background-color: #1E1E1E;
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
