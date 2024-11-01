@@ -64,75 +64,73 @@ main {
     width: 80%;
     max-width: 1000px;
     padding: 4rem 2rem;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 80px; /* Espacio para la barra superior */
+    margin-bottom: 80px; /* Espacio para la barra inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex; /* Flexbox para el contenido */
 }
 
+/* Sección de bienvenida */
 .welcome-section {
-    display: flex;
-    gap: 2rem;
+    display: flex; /* Flexbox para alinear texto e imagen */
+    gap: 2rem; /* Espacio entre elementos */
 }
 
 .welcome-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #FFFFFF;
+    font-size: 2.5rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
 }
 
 .welcome-text p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #CCCCCC;
+    font-size: 1.2rem; /* Tamaño del párrafo */
 }
 
+/* Estilo de botones */
 .buttons {
-    display: flex;
-    gap: 1rem;
+    display: flex; /* Flexbox para los botones */
+    gap: 1rem; /* Espacio entre botones */
 }
 
 .buttons .explore,
 .buttons .register {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: #121212;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.3s ease;
+    padding: 0.8rem 1.5rem; /* Espaciado interior */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #FFFFFF; /* Color del texto */
+    
+   /* Color de fondo más claro que #1E1E1E */
+   background-color: #2C2F33; 
+   
+   border-radius: 8px; /* Bordes redondeados */
+   text-decoration: none; /* Sin subrayado en enlaces */
+   transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
 }
 
 .buttons .explore:hover,
 .buttons .register:hover {
-    background-color: #333333;
-    color: #FFFFFF;
+   background-color:#333333; /* Color de fondo al pasar el ratón */
+   color:#FFFFFF; /* Color del texto al pasar el ratón */
 }
 
 /* Imagen de placeholder */
 .main-image {
-    width: 150px;
-    height: 150px;
-    background-color: #333333;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
+   width: 150px; 
+   height: 150px; 
+   background-color:#333333; 
+   border-radius:8px; 
+   display:flex; 
+   align-items:center; 
+   justify-content:center; 
+   margin-top:.5rem; 
 }
 
 /* Barra inferior */
 .bottom-bar {
-    width: 100%;
-    background-color: #1E1E1E;
-    padding: 1rem;
-    text-align: center;
-    color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+   width:100%; 
+   background-color:#1E1E1E; 
+   padding:.5rem ; 
+   text-align:center ; 
+   color:#FFFFFF ; 
+   position :fixed ; 
+   bottom :0 ; 
+   left :0 ; 
 }
-
