@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #CBD7D1;
+    background: #121212;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ header {
 }
 .logo {
     font-size: 1.5em;
-    color: #000000;
+    color: #ffffff;
     user-select: none;
 }
 .navigation a {
@@ -39,7 +39,7 @@ header {
     top: 1px;
     right: 60px;
     font-size: 1.1em;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -51,7 +51,7 @@ header {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #000000;
+    background: #ffffff;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -68,17 +68,17 @@ header {
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: #000000;
+    color: #ffffff;
     transition: .5s;
 }
 .navigation .btnlogin-popup:hover {
-    background: #000000;
-    color: #ffffff;
+    background: #ffffff;
+    color: #121212;
 }
 .navigation .btnregister {
     position: absolute;
@@ -87,17 +87,17 @@ header {
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: #000000;
+    color: #ffffff;
     transition: .5s;
 }
 .navigation .btnregister:hover {
-    background: #000000;
-    color: #ffffff;
+    background: #ffffff;
+    color: #121212;
 }
 .wraperlogin {
     top: 20%;
@@ -105,7 +105,7 @@ header {
     left: 25%;
     width: 400px;
     height: 440px;
-    background: #ffffff;
+    background: #1E1E1E;
     border: 2px solid rgba(225, 225, 225, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -120,7 +120,7 @@ header {
     right: 25%;
     width: 400px;
     height: 440px;
-    background: #ffffff;
+    background: #1E1E1E;
     border: 2px solid rgba(225, 225, 225, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -143,14 +143,14 @@ header {
 }
 .form-box h2 {
     font-size: 2em;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #ffffff;
     margin: 30px 0;
 }
 .input-box label {
@@ -159,7 +159,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -175,7 +175,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -184,19 +184,20 @@ header {
     right: 8px;
     font-size: 1.2em;
     line-height: 57px;
+    color: #ffffff;
 }
 .remember_forgot {
     font-size: .9em;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     margin: -15px 0 15px;
 }
 .remember_forgot label input {
-    accent-color: #000000;
+    accent-color: #ffffff;
     margin-right: 3px;
 }
 .remember_forgot a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 .remember_forgot a:hover {
@@ -205,7 +206,7 @@ header {
 .btn {
     width: 100%;
     height: 45px;
-    background: #162938;
+    background: #121212;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -216,13 +217,13 @@ header {
 }
 .login-register {
     font-size: .9em;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 .login-register p a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
