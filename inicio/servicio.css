@@ -51,10 +51,16 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+.circulo:hover {
+    box-shadow: 0 0 20px white; /* Sombra difusa blanca al pasar el mouse */
 }
 
 .circulo h3, .circulo p {
     color: white; /* Color del texto dentro del círculo */
+    text-align: center; /* Centrar texto dentro del círculo */
 }
 
 .circulo h3 {
@@ -62,7 +68,7 @@ h2 {
 }
 
 .circulo p {
-    margin-top: 10px;
+    margin-top: 5px; /* Ajuste del margen superior para una mejor alineación */
 }
 
 .barra-inferior {
