@@ -1,110 +1,143 @@
-/* General Styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Header */
 .header {
+    width: 100%;
+    padding: 20px;
+    background-color: #1E1E1E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #1E1E1E;
 }
 
-.header h1 {
+.logo {
     font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .search-bar {
     padding: 10px;
     border-radius: 5px;
     border: none;
+    background-color: #333;
+    color: #ffffff;
 }
 
 .nav a {
     margin: 0 10px;
     color: #ffffff;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.services-section {
+/* Main Content */
+.main-content {
+    width: 100%;
+    max-width: 1200px;
     text-align: center;
     padding: 40px 20px;
 }
 
-.services-section h2 {
-    font-size: 36px;
+.intro h2 {
+    font-size: 32px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
-.services-section p {
+.intro p {
     font-size: 18px;
-    margin-bottom: 40px;
     color: #b0b0b0;
+    margin-bottom: 40px;
 }
 
-.services-container {
+/* Services Grid */
+.services-grid {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.service-card {
+.service-bubble {
     background-color: #1E1E1E;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
 }
 
-.service-card h3 {
-    font-size: 24px;
+.service-bubble h3 {
+    font-size: 20px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
-.service-card ul {
+.service-bubble ul {
     list-style-type: none;
-}
-
-.service-card li {
     font-size: 16px;
-    margin: 8px 0;
 }
 
-.action-buttons {
+.service-bubble li {
+    margin: 5px 0;
+    color: #b0b0b0;
+}
+
+.service-bubble:hover {
+    transform: scale(1.05);
+}
+
+/* Action Buttons */
+.action-container {
     margin-top: 40px;
+    display: flex;
+    gap: 20px;
 }
 
-.btn {
+.action-btn {
     background-color: #ffffff;
     color: #121212;
+    padding: 12px 25px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.btn:hover {
+.action-btn:hover {
     background-color: #b0b0b0;
 }
 
+/* Footer */
 .footer {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
     padding: 20px;
     background-color: #1E1E1E;
-    color: #ffffff;
+    text-align: center;
     font-size: 14px;
+    color: #ffffff;
 }
