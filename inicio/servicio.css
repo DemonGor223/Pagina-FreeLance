@@ -1,143 +1,73 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
 body {
     background-color: #121212;
-    color: #ffffff;
+    color: white;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
 }
 
-/* Header */
-.header {
-    width: 100%;
-    padding: 20px;
-    background-color: #1E1E1E;
+.barra-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1E1E1E;
+    padding: 10px 20px;
 }
 
-.logo {
+.barra-superior .titulo {
     font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
 }
 
-.search-bar {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #333;
-    color: #ffffff;
-}
-
-.nav a {
-    margin: 0 10px;
-    color: #ffffff;
+.barra-superior .navegacion a {
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    margin-left: 20px;
 }
 
-/* Main Content */
-.main-content {
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-    padding: 40px 20px;
+.barra-superior .navegacion a:hover {
+    text-decoration: underline;
 }
 
-.intro h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #ffffff;
+#servicios {
+    padding: 20px;
 }
 
-.intro p {
-    font-size: 18px;
-    color: #b0b0b0;
-    margin-bottom: 40px;
+h2 {
+    color: white; /* Color del texto del título */
 }
 
-/* Services Grid */
-.services-grid {
+.contenedor-circulos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around; /* Espacio entre círculos */
+    margin-bottom: 40px; /* Espacio entre secciones */
 }
 
-.service-bubble {
+.circulo {
     background-color: #1E1E1E;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    margin: 10px; /* Margen entre círculos */
+    padding: 20px;
+    width: 200px; /* Ajustar el tamaño del círculo */
+    height: 200px; /* Ajustar el tamaño del círculo */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    justify-content: center;
 }
 
-.service-bubble h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #ffffff;
+.circulo h3, .circulo p {
+    color: white; /* Color del texto dentro del círculo */
 }
 
-.service-bubble ul {
-    list-style-type: none;
-    font-size: 16px;
+.circulo h3 {
+    margin: 0;
 }
 
-.service-bubble li {
-    margin: 5px 0;
-    color: #b0b0b0;
+.circulo p {
+    margin-top: 10px;
 }
 
-.service-bubble:hover {
-    transform: scale(1.05);
-}
-
-/* Action Buttons */
-.action-container {
-    margin-top: 40px;
+.barra-inferior {
     display: flex;
-    gap: 20px;
-}
-
-.action-btn {
-    background-color: #ffffff;
-    color: #121212;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.action-btn:hover {
-    background-color: #b0b0b0;
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    padding: 20px;
+    justify-content: space-between;
     background-color: #1E1E1E;
-    text-align: center;
-    font-size: 14px;
-    color: #ffffff;
+    padding: 10px 20px;
 }

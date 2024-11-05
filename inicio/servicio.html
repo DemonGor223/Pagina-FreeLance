@@ -3,67 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Visión Creativa</title>
-    <link rel="stylesheet" href="servicio.css">
+    <title>VISIÓN CREATIVA</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo">VISIÓN CREATIVA</h1>
-        <input type="text" placeholder="Buscar..." class="search-bar">
-        <nav class="nav">
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Categorías</a>
-        </nav>
+    <header>
+        <div class="barra-superior">
+            <div class="titulo">VISIÓN CREATIVA</div>
+            <nav class="navegacion">
+                <a href="#">Inicio</a>
+                <a href="#">Portafolio</a>
+                <a href="#">Explorar</a>
+                <a href="#">Regresar</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="main-content">
-        <section class="intro">
-            <h2>Servicios Personalizados para Freelancers y Clientes</h2>
-            <p>Conéctate con las oportunidades perfectas en el mundo laboral digital.</p>
-        </section>
-
-        <section class="services-grid">
-            <div class="service-bubble">
-                <h3>Para Freelancers</h3>
-                <ul>
-                    <li>Creación de perfil</li>
-                    <li>Proyectos exclusivos</li>
-                    <li>Pago seguro</li>
-                    <li>Evaluaciones y reseñas</li>
-                    <li>Comunidad de apoyo</li>
-                </ul>
+    <section id="servicios">
+        <h2>Servicios para Freelancers</h2>
+        <div class="contenedor-circulos">
+            <div class="circulo">
+                <h3>Creación de perfil profesional</h3>
+                <p>Herramientas para crear un perfil atractivo y destacar sus habilidades.</p>
             </div>
-            <div class="service-bubble">
-                <h3>Para Clientes</h3>
-                <ul>
-                    <li>Búsqueda de talento</li>
-                    <li>Publicación de proyectos</li>
-                    <li>Gestión de proyectos</li>
-                    <li>Soporte al cliente</li>
-                </ul>
+            <div class="circulo">
+                <h3>Búsqueda de proyectos</h3>
+                <p>Un motor de búsqueda intuitivo para encontrar proyectos que se ajusten a sus habilidades y experiencia.</p>
             </div>
-            <div class="service-bubble">
-                <h3>Beneficios Compartidos</h3>
-                <ul>
-                    <li>Contratos inteligentes</li>
-                    <li>Resolución de disputas</li>
-                    <li>Análisis de datos</li>
-                </ul>
+            <div class="circulo">
+                <h3>Sistema de mensajería</h3>
+                <p>Para comunicarse directamente con los clientes y negociar los términos de los proyectos.</p>
             </div>
-        </section>
-
-        <div class="action-container">
-            <button class="action-btn">Descubre Más</button>
-            <button class="action-btn">Explorar Categorías</button>
         </div>
-    </main>
 
-    <footer class="footer">
-        <p>Contáctanos</p>
-        <p>Soporte de ayuda</p>
+        <h2>Servicios para Clientes</h2>
+        <div class="contenedor-circulos">
+            <div class="circulo">
+                <h3>Búsqueda de talento</h3>
+                <p>Un directorio de freelancers categorizado por habilidades y experiencia.</p>
+            </div>
+            <div class="circulo">
+                <h3>Publicación de proyectos</h3>
+                <p>Una plataforma fácil de usar para publicar proyectos y recibir propuestas.</p>
+            </div>
+            <div class="circulo">
+                <h3>Gestión de proyectos</h3>
+                <p>Herramientas para gestionar el ciclo de vida de los proyectos, desde la contratación hasta la entrega.</p>
+            </div>
+        </div>
+
+        <h2>Beneficios Adicionales para Ambos</h2>
+        <div class="contenedor-circulos">
+            <div class="circulo">
+                <h3>Contratos inteligentes</h3>
+                <p>Generación automática de contratos con cláusulas estándar.</p>
+            </div>
+            <div class="circulo">
+                <h3>Resolución de disputas</h3>
+                <p>Un sistema para mediar en caso de desacuerdos entre freelancers y clientes.</p>
+            </div>
+            <div class="circulo">
+                <h3>Análisis de datos</h3>
+                <p>Informes y estadísticas sobre el rendimiento de los freelancers y el éxito de los proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="barra-inferior">
+        <span>Contactanos:</span> 
+        <span>Soporte</span>
     </footer>
 
-    <script src="servicio.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
