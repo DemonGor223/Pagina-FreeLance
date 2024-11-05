@@ -116,18 +116,6 @@ main {
     border: 2px solid #FFFFFF; /* Añadir un borde blanco en hover */
 }
 
-/* Imagen de placeholder */
-.main-image {
-    width: 150px;
-    height: 150px;
-    background-color: #333333;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
 /* Barra inferior */
 .bottom-bar {
     width: 100%;
