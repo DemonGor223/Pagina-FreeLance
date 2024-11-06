@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.navbar {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: #1E1E1E;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 60px; /* Altura de la barra superior */
+    bottom: 40px; /* Altura de la barra inferior */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 50px; /* Tamaño del icono de perfil */
+    height: 50px; /* Tamaño del icono de perfil */
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 10px; /* Espacio entre el icono y la información del perfil */
+}
+
+.sidebar-buttons button {
+    display: block;
+    background-color: #007BFF; /* Color azul para los botones */
+    border-radius: 15px; /* Esquinas redondeadas */
+    border: none; /* Sin borde */
+    color: white;
+    padding: 10px; /* Espaciado interno uniforme */
+    margin-top: 20px; /* Separación entre el perfil y el primer botón */
+    cursor: pointer;
+}
+
+.sidebar-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Color más claro al pasar el mouse */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque al pasar el mouse */
+}
+
+.content {
+   margin-left: 270px; /* Espacio para la barra lateral (250px + margen) */
+   margin-top: 60px; /* Espacio debajo de la barra superior */
+   margin-bottom: 20px; /* Espacio encima de la barra inferior (ajustado) */
+   padding-top: 20px; /* Espaciado interno superior adicional */
+   padding-left: 20px; /* Espaciado interno izquierdo */
+   padding-right: 20px; /* Espaciado interno derecho */
+   padding-bottom: calc(40px + 20px); /* Espaciado interno inferior adicional para no tocar la barra inferior */
+   background-color: #1E1E1E; /* Color de fondo del cuadro principal */
+   border-radius: 15px; /* Bordes redondeados para el cuadro principal */
+   height: calc(100vh - 100px); /* Ajustar altura para ocupar espacio entre las barras superior e inferior sin tocarla */
+}
+
+.search-bar {
+   display: flex; 
+   align-items: center; 
+   margin-top: 20px; 
+}
+
+.search-bar input[type='text'] {
+   flex-grow: 1; 
+   padding: 10px; 
+   border-radius: 15px; 
+   border: none; 
+   background-color: white; 
+   color: black; 
+   margin-right: 10px; 
+}
+
+.search-button {
+   background-color: transparent; 
+   border:none; 
+   cursor:pointer; 
+}
+
+.footer {
+   background-color: #1E1E1E;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex; /* Flexbox para alinear elementos */
+   justify-content: space-between; /* Espacio entre elementos */
+   padding: 10px 20px; /* Espaciado interno */
+}
+
+.contact, .support {
+   flex-grow: 1; /* Permitir que se expanda para ocupar espacio */
+   text-align: left; /* Alinear a la izquierda */
+}
+.support {
+   text-align: right; /* Alinear a la derecha */
+}
