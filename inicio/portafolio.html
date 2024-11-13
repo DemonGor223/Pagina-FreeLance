@@ -24,25 +24,25 @@
             <img src="https://via.placeholder.com/50" alt="Perfil" class="profile-icon">
             <div class="profile-info">
                 <span class="name">Nombre Completo</span>
-                <span class="status">Activo / Desactivado </span>
+                <span class="status">Activo / Desactivado</span>
             </div>
         </div>
         <div class="sidebar-buttons">
-            <button>Crear Nuevo Proyecto</button>
-            <button>Proyectos Creados</button>
-            <button>Proyectos Pendientes</button>
-            <button>Clientes Por proyecto</button>
-            <button>Resumen De Cuenta</button>
-            <button>Eliminar Proyecto</button>
+            <button id="btnCrearProyecto">Crear Nuevo Proyecto</button>
+            <button id="btnProyectosCreados">Proyectos Creados</button>
+            <button id="btnProyectosPendientes">Proyectos Pendientes</button>
+            <button id="btnClientesPorProyecto">Clientes Por Proyecto</button>
+            <button id="btnResumenCuenta">Resumen De Cuenta</button>
+            <button id="btnEliminarProyecto">Eliminar Proyecto</button>
         </div>
     </aside>
 
-    <main class="content">
-        <!-- Barra de búsqueda -->
+    <main class="content" id="mainContent">
         <div class="search-bar">
-            <input type="text" placeholder="Buscar Proyecto..." />
-            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar Proyecto..." id="searchInput" />
+            <button class="search-button" id="searchButton">🔍</button>
         </div>
+        <div id="projectList"></div>
     </main>
 
     <footer class="footer">
